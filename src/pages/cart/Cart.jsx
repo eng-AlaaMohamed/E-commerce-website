@@ -63,7 +63,7 @@ const Cart = () => {
                 $
               </span>
             </div>
-            <button className="cart-summary-btn">تابع عملیات الشراء</button>
+            <Link to="/E-commerce-website" className="cart-summary-btn">تابع عملیات الشراء</Link>
           </div>
         </div>
       </section>

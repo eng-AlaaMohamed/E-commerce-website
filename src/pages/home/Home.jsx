@@ -4,17 +4,10 @@ import SpecialOffers from "../../components/special-offers/SpecialOffers";
 import Brands from "../../components/brands/Brands";
 import Category from "../../components/category/Category";
 import HeaderBanner from "../../components/header-banner/HeaderBanner";
-import { useEffect } from "react";
-import { fetchProducts } from "../../redux/apiCalls/productApiCall";
-import { useSelector, useDispatch } from "react-redux";
+import { products } from "../../data/products";
+import ScrollToTop from "../../components/scrollTop/ScrollToTop";
 
 const Home = () => {
-  const dispatch = useDispatch();
-  const { products } = useSelector((state) => state.product);
-
-  useEffect(() => {
-    dispatch(fetchProducts());
-  }, []);
 
   const laptops = products.filter((p) => p.isLaptop === true);
   const mobiles = products.filter((p) => p.isLaptop === false);
@@ -29,6 +22,7 @@ const Home = () => {
       <Slider data={mobiles} />
       <HeadingTitle title="تسوق حسب المارک" />
       <Brands />
+      <ScrollToTop />
     </>
   );
 };

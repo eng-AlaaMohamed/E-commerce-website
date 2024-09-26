@@ -1,0 +1,22 @@
+.scroll-to-top {
+    position: fixed;
+    right: -60px;
+    bottom: 20px;
+    background-color: var(--strong-red-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.active-btn {
+    right: 20px;
+}

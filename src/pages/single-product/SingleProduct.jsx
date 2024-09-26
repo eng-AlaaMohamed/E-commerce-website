@@ -1,24 +1,20 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Rating from "../../components/rating/Rating";
 import "./single-product.css";
 import ProductDescription from "./ProductDescription";
-import { useSelector, useDispatch } from "react-redux";
-import { fetchSingleProduct } from "../../redux/apiCalls/productApiCall";
-import Spinner from "../../components/spinner/Spinner";
 import { addToCart } from "../../redux/apiCalls/cartApiCall";
+import { products } from "../../data/products";
+import { useDispatch } from "react-redux";
 
 const SingleProduct = () => {
   const { id } = useParams();
-
   const dispatch = useDispatch();
-  const { product, loading } = useSelector((state) => state.product);
-
+  
   const [quantity, setQuantity] = useState(1);
 
-  useEffect(() => {
-    dispatch(fetchSingleProduct(id));
-  }, [id]);
+  // Get Produt From Products
+  const product = products.find( p => p.id === +id);
 
   // Add To Cart Handler
   const addToCartHandler = () => {
@@ -33,7 +29,6 @@ const SingleProduct = () => {
     );
   };
 
-  if (loading) return <Spinner />;
 
   return (
     <div className="single-product">

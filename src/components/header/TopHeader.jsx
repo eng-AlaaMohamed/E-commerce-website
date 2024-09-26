@@ -6,7 +6,7 @@ const TopHeader = ({setToggle}) => {
       </div>
       <div className="top-header-logo">
         <i className="bi bi-basket2"></i>
-        بغداد شاب
+         موقع للتجارة الالكترونية
       </div>
       <div className="top-header-text">اهلا و سهلا بكم</div>
       <div className="top-header-phone">

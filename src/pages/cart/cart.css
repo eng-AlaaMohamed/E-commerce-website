@@ -133,8 +133,9 @@
 }
 
 .cart-summary-btn {
+    display: block;
     margin-top: 5px;
-    width: 100%;
+    text-align: center;
     border-radius: 10px;
     border: none;
     cursor: pointer;
