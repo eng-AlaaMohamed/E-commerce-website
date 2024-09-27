@@ -6,15 +6,16 @@ import ProductDescription from "./ProductDescription";
 import { addToCart } from "../../redux/apiCalls/cartApiCall";
 import { products } from "../../data/products";
 import { useDispatch } from "react-redux";
+import Swal from "sweetalert2";
 
 const SingleProduct = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
-  
+
   const [quantity, setQuantity] = useState(1);
 
   // Get Produt From Products
-  const product = products.find( p => p.id === +id);
+  const product = products.find(p => p.id === +id);
 
   // Add To Cart Handler
   const addToCartHandler = () => {
@@ -27,6 +28,14 @@ const SingleProduct = () => {
         image: product?.image,
       })
     );
+
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "تم الاضافة بنجاح",
+      showConfirmButton: false,
+      timer: 1500
+    });
   };
 
 

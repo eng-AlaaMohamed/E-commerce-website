@@ -2,10 +2,26 @@ import "./cart.css";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../../redux/apiCalls/cartApiCall";
 import { Link } from "react-router-dom"
+import Swal from "sweetalert2";
 
 const Cart = () => {
   const dispatch = useDispatch();
   const { cartItems } = useSelector((state) => state.cart);
+
+  // Remove Product From Cart
+  const removeProductFromCArt = (productId) => {
+    dispatch(
+      removeFromCart(productId)
+    );
+
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "تم الازاله بنجاح ",
+      showConfirmButton: false,
+      timer: 1500
+    });
+  };
 
   return cartItems.length < 1 ? (
     <div className="empty-cart">
@@ -41,7 +57,7 @@ const Cart = () => {
                     <span>{(item.price * item.quantity).toFixed(2)}$ </span>
                   </div>
                   <i
-                    onClick={() => dispatch(removeFromCart(item.id))}
+                    onClick={() => removeProductFromCArt(item.id)}
                     className="bi bi-trash fill cart-item-delete-icon"
                   ></i>
                 </div>
