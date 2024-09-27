@@ -1,18 +1,23 @@
+import brand1 from "../images/brands/brand1.png";
+import brand3 from "../images/brands/brand3.png";
+import brand4 from "../images/brands/brand4.png";
+import brand5 from "../images/brands/brand5.jpg";
+
 export const brands = [
     {
         id: 1,
-        image: "/images/brands/brand1.png",
+        image: brand1,
     },
     {
         id: 2,
-        image: "/images/brands/brand3.png",
+        image: brand3,
     },
     {
         id: 3,
-        image: "/images/brands/brand4.png",
+        image: brand4,
     },
     {
         id: 4,
-        image: "/images/brands/brand5.jpg",
+        image: brand5,
     },
 ]

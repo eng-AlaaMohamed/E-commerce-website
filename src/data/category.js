@@ -1,62 +1,75 @@
+import image1 from "../images/products/category/m12.jpg";
+import image2 from "../images/products/category/l4.jpg";
+import image3 from "../images/products/category/o19.jpg";
+import image4 from "../images/products/category/o20.jpg";
+import image5 from "../images/products/category/chair.jpg";
+import image6 from "../images/products/category/jordan2.png";
+import image7 from "../images/products/category/o24.jpg";
+import image8 from "../images/products/category/o4.jpg";
+import image9 from "../images/products/category/pngaaa.png";
+import image10 from "../images/products/category/pngaaam.png";
+import image11 from "../images/products/category/sport.png";
+import image12 from "../images/products/category/o23.jpg";
+
 export const categories = [
     {
         id:1,
         title: "الجوالات",
-        image: "/images/products/category/m12.jpg",
+        image: image1,
     },
     {
         id:2,
         title: "اللابتوبات",
-        image: "/images/products/category/l4.jpg",
+        image: image2,
     },
     {
         id:3,
         title: "أجهزه للارتداء",
-        image: "/images/products/category/o19.jpg",
+        image: image3,
     },
     {
         id:4,
         title: "السماعات",
-        image: "/images/products/category/o20.jpg",
+        image: image4,
     },
     {
         id:5,
         title: "الأثاث",
-        image: "/images/products/category/chair.jpg",
+        image: image5,
     },
     {
         id:6,
         title: "الأحذیه الریاضیه",
-        image: "/images/products/category/jordan2.png",
+        image: image6,
     },
     {
         id:7,
         title: "الساعات",
-        image: "/images/products/category/o24.jpg",
+        image: image7,
     },
     {
         id:8,
         title: "قرطاسیه",
-        image: "/images/products/category/o4.jpg",
+        image: image8,
     },
     {
         id:9,
         title: "أزیاء نسائیه",
-        image: "/images/products/category/pngaaa.png",
+        image: image9,
     },
     {
         id:10,
         title: "أزیاء رجالیه",
-        image: "/images/products/category/pngaaam.png",
+        image: image10,
     },
     {
         id:11,
         title: "ملابس ریاضیه",
-        image: "/images/products/category/sport.png",
+        image: image11,
     },
     {
         id:12,
         title: "النظافه",
-        image: "/images/products/category/o23.jpg",
+        image: image12,
     },
 ]

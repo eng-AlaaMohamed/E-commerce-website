@@ -1,14 +1,23 @@
+import s1 from "../images/products/special-offers/s1.jpg"
+import s2 from "../images/products/special-offers/s2.jpg"
+import s3 from "../images/products/special-offers/s3.jpg"
+import s4 from "../images/products/special-offers/s4.jpg"
+import s5 from "../images/products/special-offers/s5.jpg"
+import s6 from "../images/products/special-offers/s6.jpg"
+import s7 from "../images/products/special-offers/s7.jpg"
+import s8 from "../images/products/special-offers/s8.jpg"
+
 export const specialOffers = [
     {
         id: 100,
         title: "بیونر دی جی سماعه رأس",
-        firstImage:"/images/products/special-offers/s1.jpg",
-        secondImage:"/images/products/special-offers/s2.jpg",
+        firstImage: s1,
+        secondImage: s2,
         images: [
-            "/images/products/special-offers/s1.jpg",
-            "/images/products/special-offers/s2.jpg",
-            "/images/products/special-offers/s3.jpg",
-            "/images/products/special-offers/s4.jpg"
+            s1,
+            s2,
+            s3,
+            s4
         ],
         price: 50,
         discount: 30,
@@ -18,13 +27,13 @@ export const specialOffers = [
     {
         id: 101,
         title: "هوکو سماعه الأذن",
-        firstImage:"/images/products/special-offers/s3.jpg",
-        secondImage:"/images/products/special-offers/s4.jpg",
+        firstImage: s3,
+        secondImage: s4,
         images: [
-            "/images/products/special-offers/s3.jpg",
-            "/images/products/special-offers/s4.jpg",
-            "/images/products/special-offers/s1.jpg",
-            "/images/products/special-offers/s2.jpg"
+            s3,
+            s4,
+            s1,
+            s2
         ],
         price: 40,
         discount: 20,
@@ -34,11 +43,11 @@ export const specialOffers = [
     {
         id: 102,
         title: "سامسونج تابلیت",
-        firstImage:"/images/products/special-offers/s5.jpg",
-        secondImage:"/images/products/special-offers/s6.jpg",
+        firstImage: s5,
+        secondImage: s6,
         images: [
-            "/images/products/special-offers/s5.jpg",
-            "/images/products/special-offers/s6.jpg",
+            s5,
+            s6,
         ],
         price: 200,
         discount: 40,
@@ -48,11 +57,11 @@ export const specialOffers = [
     {
         id: 103,
         title: "سامسونج هاتف جالاسکی",
-        firstImage:"/images/products/special-offers/s7.jpg",
-        secondImage:"/images/products/special-offers/s8.jpg",
+        firstImage: s7,
+        secondImage: s8,
         images: [
-            "/images/products/special-offers/s7.jpg",
-            "/images/products/special-offers/s8.jpg",
+            s7,
+            s8,
         ],
         price: 550,
         discount: 20,

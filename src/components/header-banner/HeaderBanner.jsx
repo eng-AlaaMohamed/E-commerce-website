@@ -1,3 +1,5 @@
+import bannersShoes from "../../images/banners/shoes.png";
+import bannersHouse from "../../images/banners/house.png"
 import "./header-banner.css";
 
 const HeaderBanner = () => {
@@ -5,12 +7,12 @@ const HeaderBanner = () => {
     <div className="header-banner">
       <img
         className="header-banner-img"
-        src="/images/banners/shoes.png"
+        src= {bannersShoes}
         alt=""
       />
       <img
         className="header-banner-img"
-        src="/images/banners/house.png"
+        src={bannersHouse}
         alt=""
       />
     </div>
