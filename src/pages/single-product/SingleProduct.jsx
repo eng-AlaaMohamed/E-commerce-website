@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Rating from "../../components/rating/Rating";
 import "./single-product.css";
 import ProductDescription from "./ProductDescription";
@@ -37,6 +37,10 @@ const SingleProduct = () => {
       timer: 1500
     });
   };
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
 
 
   return (

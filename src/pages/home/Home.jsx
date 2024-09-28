@@ -6,11 +6,17 @@ import Category from "../../components/category/Category";
 import HeaderBanner from "../../components/header-banner/HeaderBanner";
 import { products } from "../../data/products";
 import ScrollToTop from "../../components/scrollTop/ScrollToTop";
+import { useEffect } from "react";
 
 const Home = () => {
 
   const laptops = products.filter((p) => p.isLaptop === true);
   const mobiles = products.filter((p) => p.isLaptop === false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <HeaderBanner />

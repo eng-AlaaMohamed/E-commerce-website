@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { removeFromCart } from "../../redux/apiCalls/cartApiCall";
 import { Link } from "react-router-dom"
 import Swal from "sweetalert2";
+import { useEffect } from "react";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -22,6 +23,10 @@ const Cart = () => {
       timer: 1500
     });
   };
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
 
   return cartItems.length < 1 ? (
     <div className="empty-cart">

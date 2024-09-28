@@ -1,6 +1,6 @@
 import ProductList from "./ProductList";
 import "./products.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductSidebar from "./ProductSidebar";
 import Pagination from "./Pagination";
 import { products } from "../../data/products";
@@ -35,6 +35,10 @@ const Products = () => {
   const finishIndex = currentPage * PRODUCT_PER_PAGE;
 
   const orderedProducts = sortedProductList.slice(startIndex, finishIndex);
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
 
 
   return (

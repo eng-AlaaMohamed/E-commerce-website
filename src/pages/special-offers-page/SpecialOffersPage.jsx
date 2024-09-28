@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { specialOffers } from "../../data/special-offers";
 import "./special-offers-page.css";
@@ -31,6 +31,10 @@ const SpecialOffersPage = () => {
       })
     );
   };
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
 
   return (
     <>
